@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A79040E1AA74F02001D3AAB"
-               BuildableName = "The Iron Yard"
-               BlueprintName = "The Iron Yard"
-               ReferencedContainer = "container:The Iron Yard.xcodeproj">
+               BlueprintIdentifier = "5A7903D61AA62148001D3AAB"
+               BuildableName = "Jackpot.app"
+               BlueprintName = "Jackpot"
+               ReferencedContainer = "container:Jackpot.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5A7903EF1AA62148001D3AAB"
+               BuildableName = "JackpotTests.xctest"
+               BlueprintName = "JackpotTests"
+               ReferencedContainer = "container:Jackpot.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,14 +42,24 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5A7903EF1AA62148001D3AAB"
+               BuildableName = "JackpotTests.xctest"
+               BlueprintName = "JackpotTests"
+               ReferencedContainer = "container:Jackpot.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A79040E1AA74F02001D3AAB"
-            BuildableName = "The Iron Yard"
-            BlueprintName = "The Iron Yard"
-            ReferencedContainer = "container:The Iron Yard.xcodeproj">
+            BlueprintIdentifier = "5A7903D61AA62148001D3AAB"
+            BuildableName = "Jackpot.app"
+            BlueprintName = "Jackpot"
+            ReferencedContainer = "container:Jackpot.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A79040E1AA74F02001D3AAB"
-            BuildableName = "The Iron Yard"
-            BlueprintName = "The Iron Yard"
-            ReferencedContainer = "container:The Iron Yard.xcodeproj">
+            BlueprintIdentifier = "5A7903D61AA62148001D3AAB"
+            BuildableName = "Jackpot.app"
+            BlueprintName = "Jackpot"
+            ReferencedContainer = "container:Jackpot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A79040E1AA74F02001D3AAB"
-            BuildableName = "The Iron Yard"
-            BlueprintName = "The Iron Yard"
-            ReferencedContainer = "container:The Iron Yard.xcodeproj">
+            BlueprintIdentifier = "5A7903D61AA62148001D3AAB"
+            BuildableName = "Jackpot.app"
+            BlueprintName = "Jackpot"
+            ReferencedContainer = "container:Jackpot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

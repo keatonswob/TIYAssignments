@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		5A7903DD1AA62148001D3AAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7903DC1AA62148001D3AAB /* main.m */; };
 		5A7903E01AA62148001D3AAB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7903DF1AA62148001D3AAB /* AppDelegate.m */; };
-		5A7903E31AA62148001D3AAB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7903E21AA62148001D3AAB /* ViewController.m */; };
 		5A7903E61AA62148001D3AAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7903E41AA62148001D3AAB /* Main.storyboard */; };
 		5A7903E81AA62148001D3AAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7903E71AA62148001D3AAB /* Images.xcassets */; };
 		5A7903EB1AA62148001D3AAB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A7903E91AA62148001D3AAB /* LaunchScreen.xib */; };
 		5A7903F71AA62148001D3AAB /* JackpotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7903F61AA62148001D3AAB /* JackpotTests.m */; };
+		5A7904021AA62193001D3AAB /* TicketsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7904011AA62193001D3AAB /* TicketsTableViewController.m */; };
+		5A7904051AA64612001D3AAB /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7904041AA64612001D3AAB /* Ticket.m */; };
+		5A79041E1AA794A1001D3AAB /* WinningTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A79041D1AA794A1001D3AAB /* WinningTicketViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		5A7903DC1AA62148001D3AAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A7903DE1AA62148001D3AAB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A7903DF1AA62148001D3AAB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5A7903E11AA62148001D3AAB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5A7903E21AA62148001D3AAB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5A7903E51AA62148001D3AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A7903E71AA62148001D3AAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A7903EA1AA62148001D3AAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5A7903F01AA62148001D3AAB /* JackpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JackpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7903F51AA62148001D3AAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A7903F61AA62148001D3AAB /* JackpotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JackpotTests.m; sourceTree = "<group>"; };
+		5A7904001AA62193001D3AAB /* TicketsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsTableViewController.h; sourceTree = "<group>"; };
+		5A7904011AA62193001D3AAB /* TicketsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsTableViewController.m; sourceTree = "<group>"; };
+		5A7904031AA64612001D3AAB /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		5A7904041AA64612001D3AAB /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		5A79041C1AA794A1001D3AAB /* WinningTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinningTicketViewController.h; sourceTree = "<group>"; };
+		5A79041D1AA794A1001D3AAB /* WinningTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinningTicketViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,12 @@
 			children = (
 				5A7903DE1AA62148001D3AAB /* AppDelegate.h */,
 				5A7903DF1AA62148001D3AAB /* AppDelegate.m */,
-				5A7903E11AA62148001D3AAB /* ViewController.h */,
-				5A7903E21AA62148001D3AAB /* ViewController.m */,
+				5A7904001AA62193001D3AAB /* TicketsTableViewController.h */,
+				5A7904011AA62193001D3AAB /* TicketsTableViewController.m */,
+				5A7904031AA64612001D3AAB /* Ticket.h */,
+				5A7904041AA64612001D3AAB /* Ticket.m */,
+				5A79041C1AA794A1001D3AAB /* WinningTicketViewController.h */,
+				5A79041D1AA794A1001D3AAB /* WinningTicketViewController.m */,
 				5A7903E41AA62148001D3AAB /* Main.storyboard */,
 				5A7903E71AA62148001D3AAB /* Images.xcassets */,
 				5A7903E91AA62148001D3AAB /* LaunchScreen.xib */,
@@ -219,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A7903E31AA62148001D3AAB /* ViewController.m in Sources */,
+				5A79041E1AA794A1001D3AAB /* WinningTicketViewController.m in Sources */,
 				5A7903E01AA62148001D3AAB /* AppDelegate.m in Sources */,
 				5A7903DD1AA62148001D3AAB /* main.m in Sources */,
+				5A7904021AA62193001D3AAB /* TicketsTableViewController.m in Sources */,
+				5A7904051AA64612001D3AAB /* Ticket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +424,7 @@
 				5A7903FC1AA62148001D3AAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A7903FD1AA62148001D3AAB /* Build configuration list for PBXNativeTarget "JackpotTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				5A7903FF1AA62148001D3AAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

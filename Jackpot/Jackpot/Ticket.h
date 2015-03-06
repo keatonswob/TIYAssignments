@@ -10,4 +10,10 @@
 
 @interface Ticket : NSObject
 
++(instancetype)ticketUsingQuickPick;
+
++(instancetype)ticketUsingArray:(NSArray *)winningNumbers;
+
+
+
 @end

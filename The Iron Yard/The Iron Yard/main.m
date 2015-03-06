@@ -7,11 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Car.h"
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+void driveCar(Car *car);
+
+int main(int argc, const char * argv[])
+{
+    @autoreleasepool
+    {
+        Car *aCar = [[Car alloc] initWithMake:@"Toyota"
+                                        model:@"Camry"
+                                     andColor:@"Red"];
+        for (int i= 0; i<6; i++)
+        {
+            driveCar(aCar);
+        }
+        
+      
     }
     return 0;
+}
+
+void driveCar(Car *car)
+{
+    
+        BOOL hasDriven = [car drive];
+        NSLog(@"%@ %@ has driven: %@", car.make, car.model, (hasDriven) ? @"YES" : @"NO");
+    
 }

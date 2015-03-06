@@ -10,4 +10,12 @@
 
 @interface Car : NSObject
 
+@property (copy) NSString *make;
+@property (copy) NSString *model;
+@property (copy) NSString *color;
+
+-(instancetype)initWithMake:(NSString *)make model:(NSString *)model andColor:(NSString *)color;
+
+-(BOOL)drive;
+
 @end

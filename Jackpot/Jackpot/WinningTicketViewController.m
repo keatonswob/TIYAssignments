@@ -9,6 +9,16 @@
 #import "WinningTicketViewController.h"
 
 @interface WinningTicketViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *fieldOne;
+@property (weak, nonatomic) IBOutlet UITextField *fieldTwo;
+@property (weak, nonatomic) IBOutlet UITextField *fieldThree;
+@property (weak, nonatomic) IBOutlet UITextField *fieldFour;
+@property (weak, nonatomic) IBOutlet UITextField *fieldFive;
+@property (weak, nonatomic) IBOutlet UITextField *fieldSix;
+@property (weak, nonatomic) IBOutlet UIButton *checkTickets;
+
+-(IBAction)checkTickets:(UIButton*)sender;
+
 
 @end
 
@@ -16,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+ 
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +34,34 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)checkTickets:(UIButton *)sender
+{
+    
+    
+    NSArray *fieldArray = @[self.fieldOne.text, self.fieldTwo.text, self.fieldThree.text, self.fieldFour.text, self.fieldFive.text, self.fieldSix];
+    
+    [self.delegate winningTicketNumberWasChosen:fieldArray];
+
+    
+    NSLog(@"%@", fieldArray);
+    
+    
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+    
+}
+
+
+
+
+
+    
+
+
+
+
+#pragma mark - 
 /*
 #pragma mark - Navigation
 

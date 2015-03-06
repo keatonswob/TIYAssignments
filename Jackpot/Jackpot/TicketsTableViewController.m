@@ -7,8 +7,17 @@
 //
 
 #import "TicketsTableViewController.h"
+#import "Ticket.h"
+#import "WinningTicketViewController.h"
 
 @interface TicketsTableViewController ()
+{
+    NSMutableArray *tickets;
+}
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
+
+- (IBAction)createTicket:(id)sender;
 
 @end
 
@@ -17,11 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    tickets = [[NSMutableArray alloc] init];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,29 +35,62 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Navigation
+
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ShowCheckTicketSegue"])
+    {
+        WinningTicketViewController *textFieldVC = (WinningTicketViewController *)[segue destinationViewController];
+        //
+        // 10. This view controller needs to be set as the time picker view controller's delegate object.
+        //
+        textFieldVC.delegate = self;
+
+    }
+
+}
+
+
+- (void) winningTicketNumberWasChosen:(NSArray *)lottoWinningNumbers
+{
+    
+}
+
+
+
+
 #pragma mark - Table view data source
 
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return [tickets count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TicketCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+  // cell.textLabel.text = tickets
+    
+    Ticket *bticket = tickets[indexPath.row];
+    
+    cell.textLabel.text= bticket.description;
+    
+    cell.detailTextLabel.text = @"";
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -96,5 +135,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Action Handlers
+
+- (IBAction)createTicket:(id)sender;
+
+{
+    Ticket *aTicket =[Ticket ticketUsingQuickPick];
+    
+    [tickets addObject:aTicket];
+    [self.tableView reloadData];
+}
+
 
 @end

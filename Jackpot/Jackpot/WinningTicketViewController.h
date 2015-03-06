@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TicketsTableViewController.h"
 
 @interface WinningTicketViewController : UIViewController
+
+
+@property(strong, nonatomic) id<TicketsTableViewControllerDelegate> delegate;
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5A7904131AA74F02001D3AAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7904121AA74F02001D3AAB /* main.m */; };
+		5A79041B1AA7517F001D3AAB /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A79041A1AA7517F001D3AAB /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		5A79040F1AA74F02001D3AAB /* The Iron Yard */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "The Iron Yard"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7904121AA74F02001D3AAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A7904191AA7517F001D3AAB /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		5A79041A1AA7517F001D3AAB /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				5A7904121AA74F02001D3AAB /* main.m */,
+				5A7904191AA7517F001D3AAB /* Car.h */,
+				5A79041A1AA7517F001D3AAB /* Car.m */,
 			);
 			path = "The Iron Yard";
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A79041B1AA7517F001D3AAB /* Car.m in Sources */,
 				5A7904131AA74F02001D3AAB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
