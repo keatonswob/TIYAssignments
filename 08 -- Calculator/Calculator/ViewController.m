@@ -24,6 +24,8 @@
 -(IBAction)divisionTapped:(UIButton*)sender;
 -(IBAction)equalTapped:(UIButton*)sender;
 -(IBAction)acTapped:(UIButton*)sender;
+-(IBAction)periodTappd:(UIButton*)sender;
+
 
 
 
@@ -68,6 +70,28 @@
     
 }
 
+-(IBAction)periodTappd:(UIButton *)sender
+{
+    if (!brain)
+    {
+        brain = [[CalculatorBrain alloc] init];
+        brain.operand1String = [@"0." mutableCopy];
+        self.displayLabel.text = brain.operand1String;
+    }
+
+        
+    
+    else if ([brain.operand2String isEqualToString:@""])
+    {
+        brain.operand2String = [@"0." mutableCopy];
+        self.displayLabel.text = brain.operand2String;
+    }
+
+  
+   
+}
+
+
 -(IBAction)additionTapped:(UIButton *)sender
 {
     brain.OperatorType = OperatorTypeAddition;
@@ -96,22 +120,30 @@
     if (brain.operatorType == OperatorTypeAddition)
     {
         double addAnswer = brain.operand1 + brain.operand2;
-        self.displayLabel.text = [NSString stringWithFormat:@"%.0f", addAnswer];
+        self.displayLabel.text = [NSString stringWithFormat:@"%.1f", addAnswer];
     }
     else if (brain.operatorType == OperatorTypeSubtraction)
     {
         double subAnswer = brain.operand1 - brain.operand2;
-        self.displayLabel.text =[NSString stringWithFormat:@"%.0f", subAnswer];
+        self.displayLabel.text =[NSString stringWithFormat:@"%.1f", subAnswer];
     }
     else if (brain.operatorType == OperatorTypeMultiplication)
     {
         double multAnswer = brain.operand1 * brain.operand2;
-        self.displayLabel.text =[NSString stringWithFormat:@"%.0f", multAnswer];
+        self.displayLabel.text =[NSString stringWithFormat:@"%.1f", multAnswer];
     }
     else if (brain.operatorType == OperatorTypeDivision)
     {
+        if (brain.operand2 == 0)
+        {
+            self.displayLabel.text = @"Error";
+            
+        }
+        else
+        {
         double divAnswer = brain.operand1 / brain.operand2;
-        self.displayLabel.text =[NSString stringWithFormat:@"%.0f", divAnswer];
+        self.displayLabel.text =[NSString stringWithFormat:@"%.1f", divAnswer];
+        }
     }
     
     
