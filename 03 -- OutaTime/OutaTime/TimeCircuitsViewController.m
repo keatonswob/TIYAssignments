@@ -65,7 +65,7 @@
                                                               locale:[NSLocale currentLocale]];
 
     [gDate setDateFormat:formatString];
-    [gDate setTimeStyle:NSDateFormatterMediumStyle];
+
     
     
     //
