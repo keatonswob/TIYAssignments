@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A47184D1AAE24DC00D4883A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47184C1AAE24DC00D4883A /* main.m */; };
+		5A4718501AAE24DC00D4883A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A47184F1AAE24DC00D4883A /* AppDelegate.m */; };
+		5A4718531AAE24DC00D4883A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4718521AAE24DC00D4883A /* ViewController.m */; };
+		5A4718561AAE24DC00D4883A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4718541AAE24DC00D4883A /* Main.storyboard */; };
+		5A4718581AAE24DC00D4883A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4718571AAE24DC00D4883A /* Images.xcassets */; };
+		5A47185B1AAE24DC00D4883A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4718591AAE24DC00D4883A /* LaunchScreen.xib */; };
+		5A4718671AAE24DC00D4883A /* Form_ValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4718661AAE24DC00D4883A /* Form_ValidatorTests.m */; };
+		5A4718751AAE3CBF00D4883A /* FormValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4718741AAE3CBF00D4883A /* FormValidator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A4718611AAE24DC00D4883A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A47183F1AAE24DC00D4883A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A4718461AAE24DC00D4883A;
+			remoteInfo = "Form Validator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A4718471AAE24DC00D4883A /* Form Validator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Form Validator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A47184B1AAE24DC00D4883A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A47184C1AAE24DC00D4883A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A47184E1AAE24DC00D4883A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A47184F1AAE24DC00D4883A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A4718511AAE24DC00D4883A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5A4718521AAE24DC00D4883A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5A4718551AAE24DC00D4883A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A4718571AAE24DC00D4883A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5A47185A1AAE24DC00D4883A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5A4718601AAE24DC00D4883A /* Form ValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Form ValidatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4718651AAE24DC00D4883A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A4718661AAE24DC00D4883A /* Form_ValidatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Form_ValidatorTests.m; sourceTree = "<group>"; };
+		5A4718731AAE3CBF00D4883A /* FormValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormValidator.h; sourceTree = "<group>"; };
+		5A4718741AAE3CBF00D4883A /* FormValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormValidator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A4718441AAE24DC00D4883A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A47185D1AAE24DC00D4883A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A47183E1AAE24DC00D4883A = {
+			isa = PBXGroup;
+			children = (
+				5A4718491AAE24DC00D4883A /* Form Validator */,
+				5A4718631AAE24DC00D4883A /* Form ValidatorTests */,
+				5A4718481AAE24DC00D4883A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A4718481AAE24DC00D4883A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A4718471AAE24DC00D4883A /* Form Validator.app */,
+				5A4718601AAE24DC00D4883A /* Form ValidatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A4718491AAE24DC00D4883A /* Form Validator */ = {
+			isa = PBXGroup;
+			children = (
+				5A47184E1AAE24DC00D4883A /* AppDelegate.h */,
+				5A47184F1AAE24DC00D4883A /* AppDelegate.m */,
+				5A4718731AAE3CBF00D4883A /* FormValidator.h */,
+				5A4718741AAE3CBF00D4883A /* FormValidator.m */,
+				5A4718511AAE24DC00D4883A /* ViewController.h */,
+				5A4718521AAE24DC00D4883A /* ViewController.m */,
+				5A4718541AAE24DC00D4883A /* Main.storyboard */,
+				5A4718571AAE24DC00D4883A /* Images.xcassets */,
+				5A4718591AAE24DC00D4883A /* LaunchScreen.xib */,
+				5A47184A1AAE24DC00D4883A /* Supporting Files */,
+			);
+			path = "Form Validator";
+			sourceTree = "<group>";
+		};
+		5A47184A1AAE24DC00D4883A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A47184B1AAE24DC00D4883A /* Info.plist */,
+				5A47184C1AAE24DC00D4883A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A4718631AAE24DC00D4883A /* Form ValidatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A4718661AAE24DC00D4883A /* Form_ValidatorTests.m */,
+				5A4718641AAE24DC00D4883A /* Supporting Files */,
+			);
+			path = "Form ValidatorTests";
+			sourceTree = "<group>";
+		};
+		5A4718641AAE24DC00D4883A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A4718651AAE24DC00D4883A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A4718461AAE24DC00D4883A /* Form Validator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A47186A1AAE24DC00D4883A /* Build configuration list for PBXNativeTarget "Form Validator" */;
+			buildPhases = (
+				5A4718431AAE24DC00D4883A /* Sources */,
+				5A4718441AAE24DC00D4883A /* Frameworks */,
+				5A4718451AAE24DC00D4883A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Form Validator";
+			productName = "Form Validator";
+			productReference = 5A4718471AAE24DC00D4883A /* Form Validator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A47185F1AAE24DC00D4883A /* Form ValidatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A47186D1AAE24DC00D4883A /* Build configuration list for PBXNativeTarget "Form ValidatorTests" */;
+			buildPhases = (
+				5A47185C1AAE24DC00D4883A /* Sources */,
+				5A47185D1AAE24DC00D4883A /* Frameworks */,
+				5A47185E1AAE24DC00D4883A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A4718621AAE24DC00D4883A /* PBXTargetDependency */,
+			);
+			name = "Form ValidatorTests";
+			productName = "Form ValidatorTests";
+			productReference = 5A4718601AAE24DC00D4883A /* Form ValidatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A47183F1AAE24DC00D4883A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					5A4718461AAE24DC00D4883A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					5A47185F1AAE24DC00D4883A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5A4718461AAE24DC00D4883A;
+					};
+				};
+			};
+			buildConfigurationList = 5A4718421AAE24DC00D4883A /* Build configuration list for PBXProject "Form Validator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A47183E1AAE24DC00D4883A;
+			productRefGroup = 5A4718481AAE24DC00D4883A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A4718461AAE24DC00D4883A /* Form Validator */,
+				5A47185F1AAE24DC00D4883A /* Form ValidatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A4718451AAE24DC00D4883A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4718561AAE24DC00D4883A /* Main.storyboard in Resources */,
+				5A47185B1AAE24DC00D4883A /* LaunchScreen.xib in Resources */,
+				5A4718581AAE24DC00D4883A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A47185E1AAE24DC00D4883A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A4718431AAE24DC00D4883A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4718751AAE3CBF00D4883A /* FormValidator.m in Sources */,
+				5A4718531AAE24DC00D4883A /* ViewController.m in Sources */,
+				5A4718501AAE24DC00D4883A /* AppDelegate.m in Sources */,
+				5A47184D1AAE24DC00D4883A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A47185C1AAE24DC00D4883A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4718671AAE24DC00D4883A /* Form_ValidatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A4718621AAE24DC00D4883A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A4718461AAE24DC00D4883A /* Form Validator */;
+			targetProxy = 5A4718611AAE24DC00D4883A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A4718541AAE24DC00D4883A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A4718551AAE24DC00D4883A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A4718591AAE24DC00D4883A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A47185A1AAE24DC00D4883A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A4718681AAE24DC00D4883A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A4718691AAE24DC00D4883A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A47186B1AAE24DC00D4883A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Form Validator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A47186C1AAE24DC00D4883A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Form Validator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5A47186E1AAE24DC00D4883A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Form ValidatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Form Validator.app/Form Validator";
+			};
+			name = Debug;
+		};
+		5A47186F1AAE24DC00D4883A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Form ValidatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Form Validator.app/Form Validator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A4718421AAE24DC00D4883A /* Build configuration list for PBXProject "Form Validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4718681AAE24DC00D4883A /* Debug */,
+				5A4718691AAE24DC00D4883A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A47186A1AAE24DC00D4883A /* Build configuration list for PBXNativeTarget "Form Validator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A47186B1AAE24DC00D4883A /* Debug */,
+				5A47186C1AAE24DC00D4883A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5A47186D1AAE24DC00D4883A /* Build configuration list for PBXNativeTarget "Form ValidatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A47186E1AAE24DC00D4883A /* Debug */,
+				5A47186F1AAE24DC00D4883A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A47183F1AAE24DC00D4883A /* Project object */;
+}
