@@ -16,6 +16,7 @@
 
 -(instancetype)initWithMake:(NSString *)make model:(NSString *)model andColor:(NSString *)color;
 
+//Performs drive action, and returns succes or failure
 -(BOOL)drive;
 
 @end

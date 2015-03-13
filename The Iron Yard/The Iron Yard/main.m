@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Car.h"
+#import "Car+Extras.h"
 
 void driveCar(Car *car);
 
@@ -18,20 +18,13 @@ int main(int argc, const char * argv[])
         Car *aCar = [[Car alloc] initWithMake:@"Toyota"
                                         model:@"Camry"
                                      andColor:@"Red"];
-        for (int i= 0; i<6; i++)
-        {
-            driveCar(aCar);
-        }
         
-      
+        NSLog(@"%@ %@ is %@", aCar.make, aCar.model, aCar.color);
+        [aCar drive];
+        
+        [aCar paint:@"Blue"];
+        
+        NSLog(@"%@ %@ is %@", aCar.make, aCar.model, aCar.color);
     }
     return 0;
-}
-
-void driveCar(Car *car)
-{
-    
-        BOOL hasDriven = [car drive];
-        NSLog(@"%@ %@ has driven: %@", car.make, car.model, (hasDriven) ? @"YES" : @"NO");
-    
 }

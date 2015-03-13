@@ -7,34 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A3F897D1AB07DBD008C77CF /* Car+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F897C1AB07DBD008C77CF /* Car+Extras.m */; };
-		5A7904131AA74F02001D3AAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7904121AA74F02001D3AAB /* main.m */; };
-		5A79041B1AA7517F001D3AAB /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A79041A1AA7517F001D3AAB /* Car.m */; };
+		5A3F89771AB07B29008C77CF /* CalculatorBrain1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A3F89761AB07B29008C77CF /* CalculatorBrain1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5A79040D1AA74F02001D3AAB /* CopyFiles */ = {
+		5A54C9B01AAF42E7002A59EB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5A3F897B1AB07DBD008C77CF /* Car+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+Extras.h"; sourceTree = "<group>"; };
-		5A3F897C1AB07DBD008C77CF /* Car+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+Extras.m"; sourceTree = "<group>"; };
-		5A79040F1AA74F02001D3AAB /* The Iron Yard */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "The Iron Yard"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A7904121AA74F02001D3AAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5A7904191AA7517F001D3AAB /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
-		5A79041A1AA7517F001D3AAB /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		5A3F89751AB07B29008C77CF /* CalculatorBrain1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain1.h; sourceTree = SOURCE_ROOT; };
+		5A3F89761AB07B29008C77CF /* CalculatorBrain1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain1.m; sourceTree = SOURCE_ROOT; };
+		5A54C9B21AAF42E7002A59EB /* libCalculatorBrain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCalculatorBrain.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5A79040C1AA74F02001D3AAB /* Frameworks */ = {
+		5A54C9AF1AAF42E7002A59EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,100 +39,95 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A7904061AA74F02001D3AAB = {
+		5A54C9A91AAF42E7002A59EB = {
 			isa = PBXGroup;
 			children = (
-				5A7904111AA74F02001D3AAB /* The Iron Yard */,
-				5A7904101AA74F02001D3AAB /* Products */,
+				5A54C9B41AAF42E7002A59EB /* CalculatorBrain */,
+				5A54C9B31AAF42E7002A59EB /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5A7904101AA74F02001D3AAB /* Products */ = {
+		5A54C9B31AAF42E7002A59EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5A79040F1AA74F02001D3AAB /* The Iron Yard */,
+				5A54C9B21AAF42E7002A59EB /* libCalculatorBrain.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5A7904111AA74F02001D3AAB /* The Iron Yard */ = {
+		5A54C9B41AAF42E7002A59EB /* CalculatorBrain */ = {
 			isa = PBXGroup;
 			children = (
-				5A7904121AA74F02001D3AAB /* main.m */,
-				5A7904191AA7517F001D3AAB /* Car.h */,
-				5A79041A1AA7517F001D3AAB /* Car.m */,
-				5A3F897B1AB07DBD008C77CF /* Car+Extras.h */,
-				5A3F897C1AB07DBD008C77CF /* Car+Extras.m */,
+				5A3F89751AB07B29008C77CF /* CalculatorBrain1.h */,
+				5A3F89761AB07B29008C77CF /* CalculatorBrain1.m */,
 			);
-			path = "The Iron Yard";
+			path = CalculatorBrain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5A79040E1AA74F02001D3AAB /* The Iron Yard */ = {
+		5A54C9B11AAF42E7002A59EB /* CalculatorBrain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A7904161AA74F02001D3AAB /* Build configuration list for PBXNativeTarget "The Iron Yard" */;
+			buildConfigurationList = 5A54C9C61AAF42E7002A59EB /* Build configuration list for PBXNativeTarget "CalculatorBrain" */;
 			buildPhases = (
-				5A79040B1AA74F02001D3AAB /* Sources */,
-				5A79040C1AA74F02001D3AAB /* Frameworks */,
-				5A79040D1AA74F02001D3AAB /* CopyFiles */,
+				5A54C9AE1AAF42E7002A59EB /* Sources */,
+				5A54C9AF1AAF42E7002A59EB /* Frameworks */,
+				5A54C9B01AAF42E7002A59EB /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "The Iron Yard";
-			productName = "The Iron Yard";
-			productReference = 5A79040F1AA74F02001D3AAB /* The Iron Yard */;
-			productType = "com.apple.product-type.tool";
+			name = CalculatorBrain;
+			productName = CalculatorBrain;
+			productReference = 5A54C9B21AAF42E7002A59EB /* libCalculatorBrain.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5A7904071AA74F02001D3AAB /* Project object */ = {
+		5A54C9AA1AAF42E7002A59EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "The Iron Yard";
 				TargetAttributes = {
-					5A79040E1AA74F02001D3AAB = {
+					5A54C9B11AAF42E7002A59EB = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 5A79040A1AA74F02001D3AAB /* Build configuration list for PBXProject "The Iron Yard" */;
+			buildConfigurationList = 5A54C9AD1AAF42E7002A59EB /* Build configuration list for PBXProject "CalculatorBrain" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 5A7904061AA74F02001D3AAB;
-			productRefGroup = 5A7904101AA74F02001D3AAB /* Products */;
+			mainGroup = 5A54C9A91AAF42E7002A59EB;
+			productRefGroup = 5A54C9B31AAF42E7002A59EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A79040E1AA74F02001D3AAB /* The Iron Yard */,
+				5A54C9B11AAF42E7002A59EB /* CalculatorBrain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5A79040B1AA74F02001D3AAB /* Sources */ = {
+		5A54C9AE1AAF42E7002A59EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A79041B1AA7517F001D3AAB /* Car.m in Sources */,
-				5A7904131AA74F02001D3AAB /* main.m in Sources */,
-				5A3F897D1AB07DBD008C77CF /* Car+Extras.m in Sources */,
+				5A3F89771AB07B29008C77CF /* CalculatorBrain1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5A7904141AA74F02001D3AAB /* Debug */ = {
+		5A54C9C41AAF42E7002A59EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -170,14 +160,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		5A7904151AA74F02001D3AAB /* Release */ = {
+		5A54C9C51AAF42E7002A59EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -195,7 +185,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -205,48 +194,53 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		5A7904171AA74F02001D3AAB /* Debug */ = {
+		5A54C9C71AAF42E7002A59EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		5A7904181AA74F02001D3AAB /* Release */ = {
+		5A54C9C81AAF42E7002A59EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5A79040A1AA74F02001D3AAB /* Build configuration list for PBXProject "The Iron Yard" */ = {
+		5A54C9AD1AAF42E7002A59EB /* Build configuration list for PBXProject "CalculatorBrain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A7904141AA74F02001D3AAB /* Debug */,
-				5A7904151AA74F02001D3AAB /* Release */,
+				5A54C9C41AAF42E7002A59EB /* Debug */,
+				5A54C9C51AAF42E7002A59EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A7904161AA74F02001D3AAB /* Build configuration list for PBXNativeTarget "The Iron Yard" */ = {
+		5A54C9C61AAF42E7002A59EB /* Build configuration list for PBXNativeTarget "CalculatorBrain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A7904171AA74F02001D3AAB /* Debug */,
-				5A7904181AA74F02001D3AAB /* Release */,
+				5A54C9C71AAF42E7002A59EB /* Debug */,
+				5A54C9C81AAF42E7002A59EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5A7904071AA74F02001D3AAB /* Project object */;
+	rootObject = 5A54C9AA1AAF42E7002A59EB /* Project object */;
 }

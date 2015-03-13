@@ -1,14 +1,14 @@
 //
-//  CalculatorBrain.m
-//  Calculator
+//  CalculatorBrain1.m
+//  CalculatorBrain
 //
-//  Created by Keaton Swoboda on 3/5/15.
+//  Created by Keaton Swoboda on 3/11/15.
 //  Copyright (c) 2015 The Iron Yard. All rights reserved.
 //
 
-#import "CalculatorBrain.h"
+#import "CalculatorBrain1.h"
 
-@implementation CalculatorBrain
+@implementation CalculatorBrain1
 
 
 -(instancetype)init
@@ -26,7 +26,7 @@
     }
     
     return self;
-
+    
 }
 
 - (NSString *) addOperandDigits:(NSString *) digits
@@ -78,24 +78,24 @@
     return returnvalue;
     
 }
-    
-    
+
+
 - (NSString *)insertDecimalPoint
 {
-        NSString *rc;
+    NSString *rc;
     
-        if (self.operatorType == OperatorTypeNone)
+    if (self.operatorType == OperatorTypeNone)
+    {
+        if ([self.operand1String isEqualToString:@""])
         {
-            if ([self.operand1String isEqualToString:@""])
-            {
-                self.operand1String = [@"0." mutableCopy];
-            }
-            else if (![self.operand1String containsString:@"."])
-            {
-                [self.operand1String appendString:@"."];
-            }
-            rc = self.operand1String;
+            self.operand1String = [@"0." mutableCopy];
         }
+        else if (![self.operand1String containsString:@"."])
+        {
+            [self.operand1String appendString:@"."];
+        }
+        rc = self.operand1String;
+    }
     else
     {
         if ([self.operand2String isEqualToString:@""])
@@ -157,3 +157,4 @@
 
 
 @end
+

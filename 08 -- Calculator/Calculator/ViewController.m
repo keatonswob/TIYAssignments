@@ -53,18 +53,10 @@
     {
         brain = [[CalculatorBrain alloc] init];
     }
-    if (brain.operatorType == OperatorTypeNone)
-    {
-            [brain.operand1String appendString:sender.titleLabel.text];
-    self.displayLabel.text = brain.operand1String;
-        
-    }
+    self.displayLabel.text = [brain addOperandDigits:sender.titleLabel.text];
     
-    else
-    {
-        [brain.operand2String appendString:sender.titleLabel.text];
-        self.displayLabel.text = brain.operand2String;
-    }
+  
+    
     
         
     [[self acLabel] setTitle:@"C" forState:UIControlStateNormal];
@@ -75,65 +67,31 @@
 
 -(IBAction)periodTappd:(UIButton *)sender
 {
+
     if (!brain)
     {
         brain = [[CalculatorBrain alloc] init];
-        brain.operand1String = [@"0." mutableCopy];
-        self.displayLabel.text = brain.operand1String;
+     
     }
-    else if (brain.operatorType == OperatorTypeNone && brain.operand1String)
-    {
-        [brain.operand1String appendString:@"."];
-        self.displayLabel.text = brain.operand1String;
-    }
-    else if ([brain.operand2String isEqualToString:@""])
-    {
-        brain.operand2String = [@"0." mutableCopy];
-        self.displayLabel.text = brain.operand2String;
-    }
-    else if(brain.operatorType != OperatorTypeNone && brain.operand2String )
-    {
-        [brain.operand2String appendString:@"."];
-        self.displayLabel.text = brain.operand2String;
-    
-    }
-  
+    self.displayLabel.text = [brain insertDecimalPoint];
    
 }
 
 -(IBAction)percentConvertButton:(UIButton *)sender
 {
-    if (brain.operatorType == OperatorTypeNone && brain.operand1String)
+    if (brain)
     {
-        brain.operand1 = [brain.operand1String floatValue];
-        double percentAnswer = brain.operand1 * .01;
-        brain.operand1String = [NSMutableString stringWithFormat:@"%.2f", percentAnswer];
-        self.displayLabel.text = brain.operand1String;
+        self.displayLabel.text = [NSString stringWithFormat:@"%g", brain.percentChanger];
     }
-    if (brain.operatorType != OperatorTypeNone && brain.operand2String)
-    {
-        brain.operand2 = [brain.operand2String floatValue];
-        double percentAnswer = brain.operand2 * .01;
-        brain.operand2String = [NSMutableString stringWithFormat:@"%.2f", percentAnswer];
-        self.displayLabel.text = brain.operand2String;
-    }
+    
 }
 
 -(IBAction)signChanger:(UIButton *)sender
 {
-    if (brain.operatorType == OperatorTypeNone && brain.operand1String)
+    if (brain)
     {
-        brain.operand1 = [brain.operand1String floatValue];
-        double percentAnswer = brain.operand1 * -1;
-        brain.operand1String = [NSMutableString stringWithFormat:@"%.0f", percentAnswer];
-        self.displayLabel.text = brain.operand1String;
-    }
-    if (brain.operatorType != OperatorTypeNone && brain.operand2String)
-    {
-        brain.operand2 = [brain.operand2String floatValue];
-        double percentAnswer = brain.operand2 * -1;
-        brain.operand2String = [NSMutableString stringWithFormat:@"%.0f", percentAnswer];
-        self.displayLabel.text = brain.operand2String;
+        self.displayLabel.text = [NSString stringWithFormat:@"%g", brain.signChanger];
+        
     }
 }
 
@@ -158,39 +116,17 @@
 }
 -(IBAction)equalTapped:(UIButton*)sender;
 {
-    brain.operand1 = [brain.operand1String floatValue];
-    brain.operand2 = [brain.operand2String floatValue];
-    
-    if (brain.operatorType == OperatorTypeAddition)
+    float returnvalue = [brain useOperator];
+    if (OperatorTypeDivision && brain.operand2 == 0)
     {
-        double addAnswer = brain.operand1 + brain.operand2;
-        self.displayLabel.text = [NSString stringWithFormat:@"%.2f", addAnswer];
+        self.displayLabel.text = @"0";
     }
-    else if (brain.operatorType == OperatorTypeSubtraction)
+    else
     {
-        double subAnswer = brain.operand1 - brain.operand2;
-        self.displayLabel.text =[NSString stringWithFormat:@"%.2f", subAnswer];
-    }
-    else if (brain.operatorType == OperatorTypeMultiplication)
-    {
-        double multAnswer = brain.operand1 * brain.operand2;
-        self.displayLabel.text =[NSString stringWithFormat:@"%.2f", multAnswer];
-    }
-    else if (brain.operatorType == OperatorTypeDivision)
-    {
-        if (brain.operand2 == 0)
-        {
-            self.displayLabel.text = @"Error";
-            
-        }
-        else
-        {
-        double divAnswer = brain.operand1 / brain.operand2;
-        self.displayLabel.text =[NSString stringWithFormat:@"%.2f", divAnswer];
-        }
+        self.displayLabel.text = [NSString stringWithFormat:@"%g", returnvalue];
     }
     
-    
+    brain = nil;
     
     
 }
