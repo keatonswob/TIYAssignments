@@ -14,7 +14,11 @@
 @interface VoltageTableViewController ()<UIPopoverPresentationControllerDelegate>
 {
     NSMutableArray *energyListed;
+//    NSMutableArray *allEnergyTypes;
+  
 }
+
+
 
 @end
 
@@ -25,6 +29,7 @@
     self.title = @"High Voltage";
     
     energyListed = [[NSMutableArray alloc] init];
+//    allEnergyTypes = [[NSMutableArray alloc] initWithObjects:@"Volts", @"Amps", @"Ohms", @"Watts", nil ];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -39,6 +44,11 @@
 }
 
 #pragma mark - Table view data source
+//
+//-(NSArray*)allEnergyTypes
+//{
+//    return [NSArray arrayWithArray:_allEnergyTypes];
+//}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
@@ -54,12 +64,29 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EnergyCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[energyListed objectAtIndex:indexPath.row] forIndexPath:indexPath];
     
     // Configure the cell...
     
     return cell;
 }
+
+
+
+-(void)energyTypeWasChosen:(NSString *)chosentype
+{
+    NSDictionary *typesDictionary = @{@"Volts": @"VoltsCell", @"Amps": @"AmpsCell", @"Ohms": @"OhmsCell", @"Watts": @"WattsCell" };
+    NSString *anIdentifier = [typesDictionary objectForKey:chosentype];
+    [energyListed addObject:anIdentifier];
+   
+    
+    
+    [self.tableView reloadData];
+    
+    
+}
+
+
 
 //
 //- (void)insertRowsAtIndexPaths:(NSArray *)indexPaths
@@ -107,11 +134,14 @@
 {
     if ([segue.identifier isEqualToString:@"ShowEnergyPopoverSegue"])
     {
+       
         EnergyTableViewController *destVC = (EnergyTableViewController *)[segue destinationViewController];
         destVC.popoverPresentationController.delegate = self;
         NSArray *priorityTypes = [Energy allEnergyTypes];
         float contentHeight = 44.0f * [priorityTypes count];
         destVC.preferredContentSize = CGSizeMake(100.0f, contentHeight);
+        
+        destVC.delegate = self;
     }
 }
 
@@ -120,6 +150,12 @@
 {
     return UIModalPresentationNone;
 }
+
+
+
+
+
+
 
 
 @end

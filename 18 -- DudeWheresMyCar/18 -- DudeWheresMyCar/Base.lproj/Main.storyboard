@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NDU-nn-q81">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="scg-UY-dZF">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="scg-UY-dZF" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="64" id="4xO-du-DhT"/>
+                            <constraint firstAttribute="trailing" secondItem="scg-UY-dZF" secondAttribute="trailing" id="Nkl-EX-at8"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="scg-UY-dZF" secondAttribute="bottom" id="ezF-Zs-Yny"/>
+                            <constraint firstItem="scg-UY-dZF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="thZ-9n-Dut"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1aJ-w4-pnv">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="s8e-Q6-gJS">
+                            <connections>
+                                <action selector="treashCurrentPin:" destination="vXZ-lx-hvc" id="rcL-Mb-7gI"/>
+                            </connections>
+                        </barButtonItem>
+                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Pin Name" textAlignment="center" minimumFontSize="17" id="afQ-M4-rry">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <barButtonItem key="rightBarButtonItem" title="Pin" id="P9R-gL-xcb">
+                            <connections>
+                                <action selector="pinCurrentLocation:" destination="vXZ-lx-hvc" id="Vv7-k2-02n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="scg-UY-dZF" id="D2H-tG-whA"/>
+                        <outlet property="pinCurrentItem" destination="P9R-gL-xcb" id="7RF-l1-hTK"/>
+                        <outlet property="textFielf" destination="afQ-M4-rry" id="md8-mY-gdy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="19x-My-Ilx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NDU-nn-q81" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YFY-k3-Jah">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Ad5-vM-LMw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NkK-o1-nEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="399"/>
+        </scene>
+    </scenes>
+</document>

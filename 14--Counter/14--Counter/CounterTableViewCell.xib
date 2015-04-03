@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="A6M-Ah-JWY" customClass="CounterTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="591" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A6M-Ah-JWY" id="ktm-X7-woy">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="249" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrw-4P-e3T">
+                        <rect key="frame" x="162" y="1.5" width="266" height="39.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xmb-bv-Rih">
+                        <rect key="frame" x="460" y="-14" width="40" height="67"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="q1o-9d-36f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                        <state key="normal" title="+">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fo-B8-WKM">
+                        <rect key="frame" x="516" y="-12" width="40" height="67.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="eDV-vu-htI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                        <state key="normal" title="-">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Counter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tOo-g7-tPO">
+                        <rect key="frame" x="17" y="7" width="129" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="lrw-4P-e3T" secondAttribute="centerX" id="1Sw-MZ-xbL"/>
+                    <constraint firstAttribute="centerY" secondItem="tOo-g7-tPO" secondAttribute="centerY" id="1hI-Ih-UBU"/>
+                    <constraint firstItem="4fo-B8-WKM" firstAttribute="leading" secondItem="Xmb-bv-Rih" secondAttribute="trailing" constant="16" id="4Ns-Ye-J01"/>
+                    <constraint firstAttribute="centerY" secondItem="lrw-4P-e3T" secondAttribute="centerY" id="NcY-tk-kEZ"/>
+                    <constraint firstAttribute="centerY" secondItem="Xmb-bv-Rih" secondAttribute="centerY" constant="1.75" id="ROV-ZZ-vb8"/>
+                    <constraint firstItem="lrw-4P-e3T" firstAttribute="leading" secondItem="tOo-g7-tPO" secondAttribute="trailing" constant="16" id="Rj0-jE-bkc"/>
+                    <constraint firstAttribute="trailing" secondItem="4fo-B8-WKM" secondAttribute="trailing" constant="35" id="RxH-J8-CWj"/>
+                    <constraint firstItem="Xmb-bv-Rih" firstAttribute="leading" secondItem="lrw-4P-e3T" secondAttribute="trailing" constant="32" id="Td6-vB-pYM"/>
+                    <constraint firstAttribute="centerY" secondItem="4fo-B8-WKM" secondAttribute="centerY" id="lfQ-ZZ-63W"/>
+                    <constraint firstItem="tOo-g7-tPO" firstAttribute="leading" secondItem="ktm-X7-woy" secondAttribute="leading" constant="17" id="zhV-J1-boH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addButton" destination="Xmb-bv-Rih" id="5Ig-8O-Aac"/>
+                <outlet property="countLabel" destination="lrw-4P-e3T" id="UzS-3q-W47"/>
+                <outlet property="minusButton" destination="4fo-B8-WKM" id="lRC-ka-bSw"/>
+                <outlet property="nameTextField" destination="tOo-g7-tPO" id="GMl-IL-t1C"/>
+            </connections>
+            <point key="canvasLocation" x="601.5" y="349"/>
+        </tableViewCell>
+    </objects>
+</document>

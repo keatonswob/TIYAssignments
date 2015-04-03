@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VoltageTableViewController.h"
 
 @interface EnergyTableViewController : UITableViewController
+
+@property (strong, nonatomic) id <VoltageTableViewControllerDelegate> delegate;
 
 @end

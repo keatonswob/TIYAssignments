@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A4EDBE41ABB448F009D5567 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EDBE31ABB448F009D5567 /* main.m */; };
+		5A4EDBE71ABB448F009D5567 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EDBE61ABB448F009D5567 /* AppDelegate.m */; };
+		5A4EDBED1ABB448F009D5567 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A4EDBEB1ABB448F009D5567 /* Main.storyboard */; };
+		5A4EDBEF1ABB448F009D5567 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4EDBEE1ABB448F009D5567 /* Images.xcassets */; };
+		5A4EDBF21ABB448F009D5567 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4EDBF01ABB448F009D5567 /* LaunchScreen.xib */; };
+		5A4EDBFE1ABB448F009D5567 /* _6___ForecasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EDBFD1ABB448F009D5567 /* _6___ForecasterTests.m */; };
+		5A4EDC091ABB44DE009D5567 /* ForecastTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EDC081ABB44DE009D5567 /* ForecastTableViewController.m */; };
+		5A4EDC0C1ABB4D50009D5567 /* ZipCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EDC0B1ABB4D50009D5567 /* ZipCodeViewController.m */; };
+		5A4EDC0F1ABB5972009D5567 /* LocationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4EDC0E1ABB5972009D5567 /* LocationCell.m */; };
+		5ADE93671ABC6D4C00A0143A /* WeatherItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE93661ABC6D4C00A0143A /* WeatherItems.m */; };
+		5AF577821AC0821D006890C3 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF577811AC0821D006890C3 /* NetworkManager.m */; };
+		5AF577861AC089B8006890C3 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF577851AC089B8006890C3 /* City.m */; };
+		5AF577881AC0907A006890C3 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AF577871AC0907A006890C3 /* Weather.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A4EDBF81ABB448F009D5567 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A4EDBD61ABB448F009D5567 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A4EDBDD1ABB448F009D5567;
+			remoteInfo = "16-- Forecaster";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A4EDBDE1ABB448F009D5567 /* 16-- Forecaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "16-- Forecaster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4EDBE21ABB448F009D5567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A4EDBE31ABB448F009D5567 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5A4EDBE51ABB448F009D5567 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5A4EDBE61ABB448F009D5567 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5A4EDBEC1ABB448F009D5567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A4EDBEE1ABB448F009D5567 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5A4EDBF11ABB448F009D5567 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5A4EDBF71ABB448F009D5567 /* 16-- ForecasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "16-- ForecasterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4EDBFC1ABB448F009D5567 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A4EDBFD1ABB448F009D5567 /* _6___ForecasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_6___ForecasterTests.m"; sourceTree = "<group>"; };
+		5A4EDC071ABB44DE009D5567 /* ForecastTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastTableViewController.h; sourceTree = "<group>"; };
+		5A4EDC081ABB44DE009D5567 /* ForecastTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastTableViewController.m; sourceTree = "<group>"; };
+		5A4EDC0A1ABB4D50009D5567 /* ZipCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipCodeViewController.h; sourceTree = "<group>"; };
+		5A4EDC0B1ABB4D50009D5567 /* ZipCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipCodeViewController.m; sourceTree = "<group>"; };
+		5A4EDC0D1ABB5972009D5567 /* LocationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationCell.h; sourceTree = "<group>"; };
+		5A4EDC0E1ABB5972009D5567 /* LocationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationCell.m; sourceTree = "<group>"; };
+		5ADE93651ABC6D4C00A0143A /* WeatherItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherItems.h; sourceTree = "<group>"; };
+		5ADE93661ABC6D4C00A0143A /* WeatherItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherItems.m; sourceTree = "<group>"; };
+		5AF577801AC08214006890C3 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		5AF577811AC0821D006890C3 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		5AF577831AC08223006890C3 /* City.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		5AF577841AC08228006890C3 /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
+		5AF577851AC089B8006890C3 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		5AF577871AC0907A006890C3 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A4EDBDB1ABB448F009D5567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4EDBF41ABB448F009D5567 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A4EDBD51ABB448F009D5567 = {
+			isa = PBXGroup;
+			children = (
+				5A4EDBE01ABB448F009D5567 /* 16-- Forecaster */,
+				5A4EDBFA1ABB448F009D5567 /* 16-- ForecasterTests */,
+				5A4EDBDF1ABB448F009D5567 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A4EDBDF1ABB448F009D5567 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A4EDBDE1ABB448F009D5567 /* 16-- Forecaster.app */,
+				5A4EDBF71ABB448F009D5567 /* 16-- ForecasterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A4EDBE01ABB448F009D5567 /* 16-- Forecaster */ = {
+			isa = PBXGroup;
+			children = (
+				5A4EDBE51ABB448F009D5567 /* AppDelegate.h */,
+				5A4EDBE61ABB448F009D5567 /* AppDelegate.m */,
+				5A4EDBEB1ABB448F009D5567 /* Main.storyboard */,
+				5A4EDC071ABB44DE009D5567 /* ForecastTableViewController.h */,
+				5A4EDC081ABB44DE009D5567 /* ForecastTableViewController.m */,
+				5A4EDC0A1ABB4D50009D5567 /* ZipCodeViewController.h */,
+				5A4EDC0B1ABB4D50009D5567 /* ZipCodeViewController.m */,
+				5A4EDC0D1ABB5972009D5567 /* LocationCell.h */,
+				5A4EDC0E1ABB5972009D5567 /* LocationCell.m */,
+				5ADE93651ABC6D4C00A0143A /* WeatherItems.h */,
+				5ADE93661ABC6D4C00A0143A /* WeatherItems.m */,
+				5AF577801AC08214006890C3 /* NetworkManager.h */,
+				5AF577811AC0821D006890C3 /* NetworkManager.m */,
+				5AF577831AC08223006890C3 /* City.h */,
+				5AF577851AC089B8006890C3 /* City.m */,
+				5AF577841AC08228006890C3 /* Weather.h */,
+				5AF577871AC0907A006890C3 /* Weather.m */,
+				5A4EDBEE1ABB448F009D5567 /* Images.xcassets */,
+				5A4EDBF01ABB448F009D5567 /* LaunchScreen.xib */,
+				5A4EDBE11ABB448F009D5567 /* Supporting Files */,
+			);
+			path = "16-- Forecaster";
+			sourceTree = "<group>";
+		};
+		5A4EDBE11ABB448F009D5567 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A4EDBE21ABB448F009D5567 /* Info.plist */,
+				5A4EDBE31ABB448F009D5567 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5A4EDBFA1ABB448F009D5567 /* 16-- ForecasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A4EDBFD1ABB448F009D5567 /* _6___ForecasterTests.m */,
+				5A4EDBFB1ABB448F009D5567 /* Supporting Files */,
+			);
+			path = "16-- ForecasterTests";
+			sourceTree = "<group>";
+		};
+		5A4EDBFB1ABB448F009D5567 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A4EDBFC1ABB448F009D5567 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A4EDBDD1ABB448F009D5567 /* 16-- Forecaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A4EDC011ABB448F009D5567 /* Build configuration list for PBXNativeTarget "16-- Forecaster" */;
+			buildPhases = (
+				5A4EDBDA1ABB448F009D5567 /* Sources */,
+				5A4EDBDB1ABB448F009D5567 /* Frameworks */,
+				5A4EDBDC1ABB448F009D5567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "16-- Forecaster";
+			productName = "16-- Forecaster";
+			productReference = 5A4EDBDE1ABB448F009D5567 /* 16-- Forecaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A4EDBF61ABB448F009D5567 /* 16-- ForecasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A4EDC041ABB448F009D5567 /* Build configuration list for PBXNativeTarget "16-- ForecasterTests" */;
+			buildPhases = (
+				5A4EDBF31ABB448F009D5567 /* Sources */,
+				5A4EDBF41ABB448F009D5567 /* Frameworks */,
+				5A4EDBF51ABB448F009D5567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A4EDBF91ABB448F009D5567 /* PBXTargetDependency */,
+			);
+			name = "16-- ForecasterTests";
+			productName = "16-- ForecasterTests";
+			productReference = 5A4EDBF71ABB448F009D5567 /* 16-- ForecasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A4EDBD61ABB448F009D5567 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "The Iron Yard";
+				TargetAttributes = {
+					5A4EDBDD1ABB448F009D5567 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					5A4EDBF61ABB448F009D5567 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 5A4EDBDD1ABB448F009D5567;
+					};
+				};
+			};
+			buildConfigurationList = 5A4EDBD91ABB448F009D5567 /* Build configuration list for PBXProject "16-- Forecaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A4EDBD51ABB448F009D5567;
+			productRefGroup = 5A4EDBDF1ABB448F009D5567 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A4EDBDD1ABB448F009D5567 /* 16-- Forecaster */,
+				5A4EDBF61ABB448F009D5567 /* 16-- ForecasterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A4EDBDC1ABB448F009D5567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4EDBED1ABB448F009D5567 /* Main.storyboard in Resources */,
+				5A4EDBF21ABB448F009D5567 /* LaunchScreen.xib in Resources */,
+				5A4EDBEF1ABB448F009D5567 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4EDBF51ABB448F009D5567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A4EDBDA1ABB448F009D5567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AF577881AC0907A006890C3 /* Weather.m in Sources */,
+				5A4EDBE71ABB448F009D5567 /* AppDelegate.m in Sources */,
+				5AF577821AC0821D006890C3 /* NetworkManager.m in Sources */,
+				5AF577861AC089B8006890C3 /* City.m in Sources */,
+				5A4EDBE41ABB448F009D5567 /* main.m in Sources */,
+				5A4EDC0F1ABB5972009D5567 /* LocationCell.m in Sources */,
+				5A4EDC091ABB44DE009D5567 /* ForecastTableViewController.m in Sources */,
+				5A4EDC0C1ABB4D50009D5567 /* ZipCodeViewController.m in Sources */,
+				5ADE93671ABC6D4C00A0143A /* WeatherItems.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A4EDBF31ABB448F009D5567 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4EDBFE1ABB448F009D5567 /* _6___ForecasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A4EDBF91ABB448F009D5567 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A4EDBDD1ABB448F009D5567 /* 16-- Forecaster */;
+			targetProxy = 5A4EDBF81ABB448F009D5567 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A4EDBEB1ABB448F009D5567 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A4EDBEC1ABB448F009D5567 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A4EDBF01ABB448F009D5567 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A4EDBF11ABB448F009D5567 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A4EDBFF1ABB448F009D5567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5A4EDC001ABB448F009D5567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A4EDC021ABB448F009D5567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "16-- Forecaster/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5A4EDC031ABB448F009D5567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "16-- Forecaster/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5A4EDC051ABB448F009D5567 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "16-- ForecasterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/16-- Forecaster.app/16-- Forecaster";
+			};
+			name = Debug;
+		};
+		5A4EDC061ABB448F009D5567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "16-- ForecasterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/16-- Forecaster.app/16-- Forecaster";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A4EDBD91ABB448F009D5567 /* Build configuration list for PBXProject "16-- Forecaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4EDBFF1ABB448F009D5567 /* Debug */,
+				5A4EDC001ABB448F009D5567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A4EDC011ABB448F009D5567 /* Build configuration list for PBXNativeTarget "16-- Forecaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4EDC021ABB448F009D5567 /* Debug */,
+				5A4EDC031ABB448F009D5567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A4EDC041ABB448F009D5567 /* Build configuration list for PBXNativeTarget "16-- ForecasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4EDC051ABB448F009D5567 /* Debug */,
+				5A4EDC061ABB448F009D5567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A4EDBD61ABB448F009D5567 /* Project object */;
+}

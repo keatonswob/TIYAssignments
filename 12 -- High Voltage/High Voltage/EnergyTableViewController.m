@@ -8,9 +8,13 @@
 
 #import "EnergyTableViewController.h"
 
+#import "VoltageTableViewController.h"
 #import "Energy.h"
 
 @interface EnergyTableViewController ()
+{
+    NSMutableArray *lessEnergyTypes;
+}
 
 @end
 
@@ -18,8 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,9 +49,23 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TypesCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = [Energy.allEnergyTypes objectAtIndex:indexPath.row] ;
+    
+    
+    cell.textLabel.text = [[Energy allEnergyTypes] objectAtIndex:indexPath.row] ;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *theType = [Energy allEnergyTypes][indexPath.row];
+    [self.delegate energyTypeWasChosen:theType];
+    
+    
+    
+ [self dismissViewControllerAnimated:YES completion:nil];
+    
+    
 }
 
 
@@ -95,5 +112,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
 
 @end

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8JJ-CI-2HZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Counter Table View Controller-->
+        <scene sceneID="J1s-u1-fzF">
+            <objects>
+                <tableViewController id="sMX-WL-WrE" customClass="CounterTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="VZE-Ml-f9K">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="sMX-WL-WrE" id="BkF-Hf-Cav"/>
+                            <outlet property="delegate" destination="sMX-WL-WrE" id="xiQ-ZG-4To"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="lh4-dU-hlh">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="tS6-IC-IUA">
+                            <connections>
+                                <action selector="clearButton:" destination="sMX-WL-WrE" id="DaC-G0-74G"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QX6-3i-XyM">
+                            <connections>
+                                <action selector="addCell:" destination="sMX-WL-WrE" id="cQ0-kl-YXg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ak5-GU-7wq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="419"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Q8V-JL-Bok">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8JJ-CI-2HZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UhG-sy-5LX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sMX-WL-WrE" kind="relationship" relationship="rootViewController" id="mti-1J-Qy1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gql-zV-RLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="419"/>
+        </scene>
+    </scenes>
+</document>

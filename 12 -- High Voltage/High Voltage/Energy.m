@@ -10,9 +10,10 @@
 
 @implementation Energy
 
-+(NSArray*)allEnergyTypes;
++(NSMutableArray*)allEnergyTypes;
 {
-    return @[@"Watts", @"Volts", @"Amps", @"Ohms" ];
+    return [[NSMutableArray alloc] initWithObjects:@"Volts", @"Amps", @"Ohms", @"Watts", nil ];
 }
+
 
 @end

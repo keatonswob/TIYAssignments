@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwiftBriefing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agent Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="upc-G5-0Cs">
+                                <rect key="frame" x="20" y="44" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LCI-OP-6Tl">
+                                <rect key="frame" x="20" y="94" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRH-Uh-Og7">
+                                <rect key="frame" x="257" y="144" width="87" height="30"/>
+                                <state key="normal" title="Authenticate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="authButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hmb-Il-auw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4R-Uk-e8d">
+                                <rect key="frame" x="227" y="182" width="146" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4w-sl-3sL">
+                                <rect key="frame" x="60" y="250" width="480" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charlies agels" translatesAutoresizingMaskIntoConstraints="NO" id="h53-1M-b06">
+                                <rect key="frame" x="180" y="405" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="mbL-Ix-NLJ"/>
+                                    <constraint firstAttribute="width" constant="240" id="wP5-rq-0PH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LCI-OP-6Tl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="0TY-C7-Td6"/>
+                            <constraint firstAttribute="centerX" secondItem="h53-1M-b06" secondAttribute="centerX" id="1ea-Fv-lK8"/>
+                            <constraint firstAttribute="centerX" secondItem="PRH-Uh-Og7" secondAttribute="centerX" id="5DY-51-q6x"/>
+                            <constraint firstAttribute="trailing" secondItem="upc-G5-0Cs" secondAttribute="trailing" constant="20" id="5jX-wn-WGl"/>
+                            <constraint firstItem="upc-G5-0Cs" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="24" id="5oe-iP-Vtq"/>
+                            <constraint firstItem="h53-1M-b06" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="180" id="8Rh-ZS-GGH"/>
+                            <constraint firstAttribute="trailing" secondItem="L4w-sl-3sL" secondAttribute="trailing" constant="60" id="ALs-M2-wUq"/>
+                            <constraint firstItem="L4w-sl-3sL" firstAttribute="top" secondItem="S4R-Uk-e8d" secondAttribute="bottom" constant="41.5" id="CJG-Hu-p6F"/>
+                            <constraint firstItem="L4w-sl-3sL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="60" id="EhF-1Y-Yec"/>
+                            <constraint firstAttribute="centerX" secondItem="S4R-Uk-e8d" secondAttribute="centerX" id="Gvd-r7-yJJ"/>
+                            <constraint firstAttribute="centerX" secondItem="upc-G5-0Cs" secondAttribute="centerX" id="NeT-ag-S82"/>
+                            <constraint firstAttribute="centerX" secondItem="LCI-OP-6Tl" secondAttribute="centerX" id="Qwm-MB-Rqh"/>
+                            <constraint firstItem="LCI-OP-6Tl" firstAttribute="top" secondItem="upc-G5-0Cs" secondAttribute="bottom" constant="20" id="RTz-7a-6Gm"/>
+                            <constraint firstAttribute="trailing" secondItem="h53-1M-b06" secondAttribute="trailing" constant="180" id="RdQ-ok-yZI"/>
+                            <constraint firstItem="h53-1M-b06" firstAttribute="top" secondItem="S4R-Uk-e8d" secondAttribute="bottom" constant="200.5" id="SIv-Vi-hu1"/>
+                            <constraint firstAttribute="centerX" secondItem="L4w-sl-3sL" secondAttribute="centerX" id="eNE-fD-rhd"/>
+                            <constraint firstAttribute="trailing" secondItem="LCI-OP-6Tl" secondAttribute="trailing" constant="20" id="iYp-BJ-t0l"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="h53-1M-b06" secondAttribute="bottom" constant="63" id="pKd-AF-WTT"/>
+                            <constraint firstItem="upc-G5-0Cs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="pjr-0f-40a"/>
+                            <constraint firstItem="PRH-Uh-Og7" firstAttribute="top" secondItem="LCI-OP-6Tl" secondAttribute="bottom" constant="20" id="pnl-hg-2Dj"/>
+                            <constraint firstItem="S4R-Uk-e8d" firstAttribute="top" secondItem="PRH-Uh-Og7" secondAttribute="bottom" constant="8" id="t7B-tN-D9J"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="L4w-sl-3sL" secondAttribute="bottom" constant="250" id="w2h-IN-hCR"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="h53-1M-b06" secondAttribute="bottom" constant="67" id="zSv-fK-dLp"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Rh-ZS-GGH"/>
+                                <exclude reference="RdQ-ok-yZI"/>
+                                <exclude reference="SIv-Vi-hu1"/>
+                                <exclude reference="pKd-AF-WTT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="authenticateButton" destination="PRH-Uh-Og7" id="AIF-HS-WnH"/>
+                        <outlet property="briefingTextView" destination="L4w-sl-3sL" id="tAy-7w-7Sz"/>
+                        <outlet property="goodMorningLabel" destination="S4R-Uk-e8d" id="Jfi-Ri-sDg"/>
+                        <outlet property="nameTextField" destination="upc-G5-0Cs" id="Fvk-sv-TO1"/>
+                        <outlet property="passTextField" destination="LCI-OP-6Tl" id="J7n-BU-uJT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="charlies agels" width="600" height="395"/>
+    </resources>
+</document>

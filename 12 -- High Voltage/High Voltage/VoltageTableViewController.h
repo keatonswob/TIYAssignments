@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VoltageTableViewController : UITableViewController
+@protocol VoltageTableViewControllerDelegate
+
+-(void)energyTypeWasChosen:(NSString *)chosentype;
+
+@end
+
+@interface VoltageTableViewController : UITableViewController <VoltageTableViewControllerDelegate>
+//{
+//    NSArray*_allEnergyTypes;
+//}
+//
+//-(NSArray*)allEnergyTypes;
 
 @end
